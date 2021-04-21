@@ -28,7 +28,7 @@ def draw_circle(radius):
 
 
 # move the turtle on a circle with given radius
-# found calculation for this on: https://stackoverflow.com/questions/64647096/how-to-draw-a-circle-using-turtle-in-python
+# found calculation for this on this page: https://stackoverflow.com/questions/64647096/how-to-draw-a-circle-using-turtle-in-python
 def move_turtle(radius):
     for i in range(360):
         turtle.forward((2 * math.pi * radius) / 360)
@@ -41,5 +41,4 @@ if __name__ == "__main__":
     else:
         print("you forgot to enter an integer on the command line - please enter a number")
         integer = int(sys.stdin.readline())
-
     draw_circle(integer)
